@@ -1,0 +1,42 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/BG-Frutas\ 1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero > .container {
+    width: 90%;
+    margin: 0 auto;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__speach {
+    position: relative;
+}
+
+.hero__speach--img {
+    
+}
+
+.hero__speach--text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+
+.hero__products {
+    display: flex;
+}

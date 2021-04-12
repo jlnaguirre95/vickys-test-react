@@ -1,0 +1,28 @@
+.navbar {
+    height: 8rem;
+    padding: 3rem 1rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    width: 10rem;
+}
+
+.navbar__logo > img {
+    width: 100%;
+}
+
+.navbar__navigation {
+    display: flex
+}
+
+.navbar__navigation > ul {
+    display: flex;
+}
+
+.navbar__navigation > ul > li {
+    color: #fff;
+}

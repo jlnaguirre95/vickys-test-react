@@ -1,42 +1,85 @@
 .hero {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../assets/BG-Frutas\ 1.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../assets/bg-main.jpg');
     background-position: center;
     background-size: cover;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero > .container {
-    width: 90%;
-    margin: 0 auto;
-    display:  flex;
-    align-items: center;
-    justify-content: center;
+.hero__container {
+    margin-top: 10rem;
+    display: flex;
+    align-items: flex-end;
 }
 
 .hero__content {
+    margin-right: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.hero__heading {
+    background-color: var(--blue-color);
+    margin-bottom: 4rem;
+    transform: translate3d(3rem);
+    animation: scales 1500ms infinite linear;
+    animation-direction: alternate
 }
 
 .hero__speach {
     position: relative;
 }
 
-.hero__speach--img {
-    
-}
-
 .hero__speach--text {
     position: absolute;
     top: 50%;
-    left: 0;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -65%);
+    z-index: 50;
 }
 
 .hero__products {
-    display: flex;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: translateX(0);
+    transition: all 450ms ease-in;
+}
+
+.hero__products--out {
+    transform: translateX(600px);
+}
+
+.hero__product > img {
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .hero__container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .hero__content {
+        margin-right: 0;
+    }
+
+    .hero__products {
+        width: 80%;
+    }
+}
+
+@keyframes scales {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: translate3d(scale(1.2))
+    }
 }

@@ -9,20 +9,28 @@ const Items = () => {
     return (
         <div className="items">
             <div className="items__card">
-                <div className="items__text"></div>
-                <img src={card1} alt="" />
+                <img className="items__card-img"src={card1} alt="" />
+                <div className="items__card-info">
+                    <p>Para un hijo de la mezcla,😎 tres sabores rifados: Vicky Chamoy, Vicky Mango y Vicky Chelada.</p>
+                </div>
             </div>
             <div className="items__card">
-                <div className="items__text"></div>
-                <img src={card2} alt="" />
+                <img className="items__card-img"src={card2} alt="" />
+                <div className="items__card-info">
+                    <p>¡Pásele! ¡Pásele! Ya llegó la ¡Vicky Chamoy! 🍺🔥</p>
+                </div>
             </div>
             <div className="items__card">
-                <div className="items__text"></div>
-                <img src={card3} alt="" />
+                <img className="items__card-img"src={card3} alt="" />
+                <div className="items__card-info">
+                    <p>Le venimos manejando lo que viene siendo la sabrosa ¡Vicky Mango! ⚡</p>
+                </div>
             </div>
             <div className="items__card">
-                <div className="items__text"></div>
-                <img src={card4} alt="" />
+                <img className="items__card-img"src={card4} alt="" />
+                <div className="items__card-info">
+                    <p>Del barrio pa'l mundo, le traemos la ¡Vicky Chelada!💥👌🏽</p>
+                </div>
             </div>
         </div>
     );
